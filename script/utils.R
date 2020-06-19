@@ -14,7 +14,9 @@ check_and_install_packages = function() {
                       "ggmap",
                       "gganimate", 
                       "sf", 
-                      "rgdal")
+                      "rgdal", 
+                      "av",
+                      "gifski")
 
 # make list of packages that are required, but not already downloaded
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[, "Package"])]

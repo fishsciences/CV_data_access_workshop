@@ -113,12 +113,12 @@ animate(plot, fps = 2) # animate plot - not run; creates a bunch of .pngs in roo
 
 # save animation to directory
 anim_save("fig_output/GS46638.gif", plot, device = "png") # Error: The animation object does not specify a save_animation method            
+}
 
 # optional: save as mp4 to pause and click through frame by frame
 b <- animate(plot, renderer = av_renderer()) # Error: The av package is required to use av_renderer; add to your package list or remove dependency here
 anim_save("fig_output/GS46638.mp4", b)
 
-}
 
 
 # Faceted plot ------------------------------------------------------------
